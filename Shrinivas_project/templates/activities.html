@@ -1,0 +1,216 @@
+<html >
+<head>
+
+    <title>Activities in Karnataka</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#introduction">Introduction</a>
+    <div class="dropdown">
+        <a href="#Discover">Discover</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Destinations</a>
+                <ul class="district-dropdown">
+                    <li><a href="#">Bagalkote</a></li>
+                    <li><a href="#">Ballari</a></li>
+                    <li><a href="#">Belagavi</a></li>
+                    <li><a href="#">Bengaluru Rural</a></li>
+                    <li><a href="#">Bengaluru Urban</a></li>
+                    <li><a href="#">Bidar</a></li>
+                    <li><a href="#">Chamarajanagar</a></li>
+                    <li><a href="#">Chikkaballapura</a></li>
+                    <li><a href="#">Chikkamagaluru</a></li>
+                    <li><a href="#">Chitradurga</a></li>
+                    <li><a href="#">Dakshina Kannada</a></li>
+                    <li><a href="#">Davanagere</a></li>
+                    <li><a href="#">Dharwad</a></li>
+                    <li><a href="#">Gadag</a></li>
+                    <li><a href="#">Hassan</a></li>
+                    <li><a href="#">Haveri</a></li>
+                    <li><a href="#">Kalaburagi</a></li>
+                    <li><a href="#">Kodagu</a></li>
+                    <li><a href="#">Kolar</a></li>
+                    <li><a href="#">Koppal</a></li>
+                    <li><a href="#">Mandya</a></li>
+                    <li><a href="#">Mysuru</a></li>
+                    <li><a href="#">Raichur</a></li>
+                    <li><a href="#">Ramanagara</a></li>
+                    <li><a href="#">Shivamogga</a></li>
+                    <li><a href="#">Tumakuru</a></li>
+                    <li><a href="#">Udupi</a></li>
+                    <li><a href="#">Uttara Kannada</a></li>
+                    <li><a href="#">Vijayanagara</a></li>
+                    <li><a href="#">Vijayapura</a></li>
+                    <li><a href="#">Yadgiri</a></li>
+                </ul>
+            </li>
+            <li><a href="#">WildLife</a></li>
+            <li><a href="#">Palaces</a></li>
+            <li><a href="#">Historical Places</a></li>
+            <li><a href="#">Religious Places</a></li>
+            <li><a href="#">Museums</a></li>
+            <li><a href="#">Hills & Trekking</a></li>
+            <li><a href="#">Others</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <a href="#E-Tickets">E-Tickets</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">BUSES</a></li>
+            <li><a href="#">TRAIN</a></li>
+            <li><a href="#">FLIGHTS</a></li>
+            <li><a href="#">HISTORICAL PLACES</a></li>
+            <li><a href="#">Museums</a></li>
+            <li><a href="#">TOURIST PLACES</a></li>
+            <li><a href="#">SPORTS</a></li>
+            <li><a href="#">EVENTS</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <img src="{{ url_for('static', filename='Logo.png') }}" alt="Karnataka Tourism Logo" class="gov-logo">
+    </div>
+
+    <div class="dropdown">
+    <a href="#Hotels">Hotels & Resorts</a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Hotels</a>
+            <ul class="hotel-dropdown">
+                <li><a href="#">5 Star</a></li>
+                <li><a href="#">4 Star</a></li>
+                <li><a href="#">Sea View</a></li>
+                <li><a href="#">Nature View</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Resorts</a></li>
+    </ul>
+</div>
+
+
+        <a href="#Plantrip">PlanTrip</a>
+
+
+
+
+        <a href="#about">About Us</a>
+
+
+</div>
+    <div class="background">
+    <div class="slideshow-container">
+        <div class="slide" style="background-image: url('{{ url_for('static', filename='Karnataka1.jpg') }}');">
+            <h1 class="textpic">INCREDIBLE <br><span>KARNATAKA | ಕರ್ನಾಟಕ</span></h1>
+        </div>
+        <div class="slide" style="background-image: url('{{ url_for('static', filename='Karnataka2.jpg') }}');">
+            <h1 class="textpic">INCREDIBLE <br><span>KARNATAKA | ಕರ್ನಾಟಕ</span></h1>
+        </div>
+        <div class="slide" style="background-image: url('{{ url_for('static', filename='Karnataka3.jpg') }}');">
+            <h1 class="textpic">INCREDIBLE <br><span>KARNATAKA | ಕರ್ನಾಟಕ</span></h1>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+
+    <div class="card">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='Restaurant.jpg') }}" alt="Restaurant">
+            <div class="sponsored">Sponsored</div>
+        </div>
+        <div class="card-content">
+            <h3>SPACE AND SCIENTIFIC HALL</h3>
+            <p><span class="rating">4.8</span> | 12 Ratings | From <span class="price">₹300-₹2000</span> | SCIENCE</p>
+            <p>EXPERIENCE SPACE AND TECHNOLOGY</p>
+            <span class="status open">Open Now</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='Hampi.jpg') }}" alt="Hampi">
+            <div class="sponsored">Sponsored</div>
+        </div>
+        <div class="card-content">
+            <h3>Hampi Heritage Tour</h3>
+            <p><span class="rating">4.7</span> | 10 Ratings | From <span class="price">₹10000-₹100000</span> | Historical Site</p>
+            <p>Explore the UNESCO World Heritage site filled with ancient temples.</p>
+            <span class="status closed">Closed Now</span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='Kabini.jpg') }}" alt="Kabini">
+            <div class="sponsored">Sponsored</div>
+        </div>
+        <div class="card-content">
+            <h3>Kabini Forest Safari</h3>
+            <p><span class="rating">4.5</span> | 8 Ratings | From <span class="price">₹5000-₹7000</span> | Wildlife</p>
+            <p>Enjoy a thrilling wildlife safari in the lush green forests of Kabini.</p>
+            <span class="status open">Open Now</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="content" id="introduction">
+        <h1>Overview of Karnataka</h1>
+           </h1>
+    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
+        Karnataka, located in the southern part of India, is a state known for its rich cultural heritage, diverse landscapes, and historical significance.
+        From ancient temples and UNESCO World Heritage Sites to lush forests and serene beaches, Karnataka offers a perfect blend of tradition and modernity.
+        It is home to vibrant cities like Bengaluru, the IT capital of India, as well as picturesque hill stations, wildlife sanctuaries, and coastal retreats.
+    </p>
+
+    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
+        The state boasts a unique mix of history and natural beauty, with architectural marvels such as the Vijayanagara ruins at Hampi,
+        the intricate carvings of Belur and Halebidu, and the magnificent Mysore Palace.
+        For nature lovers, Karnataka offers the misty hills of Coorg, the dense forests of Kabini, and the pristine beaches of Gokarna and Karwar.
+    </p>
+
+    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300;font-family: 'Caveat';">
+        In addition to its breathtaking landscapes, Karnataka is known for its diverse cuisine, rich traditions, and colorful festivals like Dasara and Kambala.
+        Whether you're an adventure seeker, a history enthusiast, or someone looking to relax in nature, Karnataka has something to offer for every traveler.
+    </p>
+        <video autoplay muted loop class="background-video">
+            <source src="{{ url_for('static', filename='Kar.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content" id="Discover">
+        <h2>Discover Karnataka</h2>
+        <p>Discover Incredible Karnataka</p>
+    </div>
+
+    <div class="content" id="E-Tickets">
+        <h2>BuyTickets</h2>
+        <p>You can Buy tickets here for 5% Discount</p>
+    </div>
+
+    <div class="content" id="Hotels">
+        <h2>Books Hotels and Resort Here</h2>
+        <p>You Can Book Government Approved Hotels and Resort here</p>
+    </div>
+
+    <div class="content" id="Plantrip">
+        <h2>PlanTripHere</h2>
+        <p>Explore local traditions, festivals, and food.</p>
+    </div>
+
+    <div class="content" id="about">
+        <h2>About Us</h2>
+        <p>Jai Shree Ram</p>
+    </div>
+
+</body>
+</html>
