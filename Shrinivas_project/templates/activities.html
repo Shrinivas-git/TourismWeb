@@ -1,13 +1,17 @@
 <html >
 <head>
-
     <title>Tourism of Karnataka</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="ad">
+        This is Ad
+    </div>
 <div class="navbar">
     <a href="#introduction">Introduction</a>
     <div class="dropdown">
@@ -97,7 +101,7 @@
 
 
 
-        <a href="#about">About Us</a>
+        <a href="index">About Us</a>
 
 
 </div>
@@ -165,19 +169,19 @@
     <div class="content" id="introduction">
         <h1>Overview of Karnataka</h1>
            </h1>
-    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
+    <p style="color: #4b0082; ; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
         Karnataka, located in the southern part of India, is a state known for its rich cultural heritage, diverse landscapes, and historical significance.
         From ancient temples and UNESCO World Heritage Sites to lush forests and serene beaches, Karnataka offers a perfect blend of tradition and modernity.
         It is home to vibrant cities like Bengaluru, the IT capital of India, as well as picturesque hill stations, wildlife sanctuaries, and coastal retreats.
     </p>
 
-    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
+    <p style="color: #4b0082; ; line-height: 1.6; font-weight: 300; font-family: 'Caveat';">
         The state boasts a unique mix of history and natural beauty, with architectural marvels such as the Vijayanagara ruins at Hampi,
         the intricate carvings of Belur and Halebidu, and the magnificent Mysore Palace.
         For nature lovers, Karnataka offers the misty hills of Coorg, the dense forests of Kabini, and the pristine beaches of Gokarna and Karwar.
     </p>
 
-    <p style="color: #4b0082; font-size: 36px; line-height: 1.6; font-weight: 300;font-family: 'Caveat';">
+    <p style="color: #4b0082; ; line-height: 1.6; font-weight: 300;font-family: 'Caveat';">
         In addition to its breathtaking landscapes, Karnataka is known for its diverse cuisine, rich traditions, and colorful festivals like Dasara and Kambala.
         Whether you're an adventure seeker, a history enthusiast, or someone looking to relax in nature, Karnataka has something to offer for every traveler.
     </p>
@@ -193,7 +197,7 @@
     </div>
 
     <div class="content" id="E-Tickets">
-        <h2>BuyTickets</h2>
+        <h2 onclick="ad()">BuyTickets</h2>
         <p>You can Buy tickets here for 5% Discount</p>
     </div>
 

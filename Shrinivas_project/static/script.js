@@ -23,3 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(showSlides, 3000);
     }
 });
+
+
+function ad(){
+    let addis = document.querySelector(".ad")
+
+    if(addis.style.display  == "block"){
+        addis.style.display  = "none"
+    }else{
+        addis.style.display  = "block"
+
+    }
+}

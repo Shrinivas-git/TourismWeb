@@ -1,10 +1,32 @@
+
+
+*{
+    font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+}
+
 body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    position: relative;
 }
-#navbar
+
+.ad{
+    position: fixed;
+    top: 45% ;
+    right: 45%;
+    padding: 20px;
+    z-index: 100;
+    background: white;
+    border-radius: 5px;
+
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -14,7 +36,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .district-dropdown {
@@ -166,7 +188,7 @@ body {
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
     font-size: 18px;
     letter-spacing: 2px;
     color: #fbe106;
@@ -205,7 +227,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 50px;
     text-align: center;
     font-weight: bold;
@@ -306,6 +328,7 @@ body {
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    font-size: 19px;
 }
 
 
