@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f5f5f5;
 }
-#navbar
 .navbar {
     display: flex;
     justify-content: center;
@@ -86,8 +85,6 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
-
 .district-dropdown {
     display: none;
     position: absolute;
@@ -120,7 +117,6 @@ body {
     color: #000;
     border-radius: 3px;
 }
-
 
 .hotel-dropdown {
     display: none;
@@ -177,7 +173,7 @@ body {
     border-radius: 5px;
 }
 
-
+/* Logo */
 .gov-logo {
     width: 50px;
     margin-bottom: 1px;
@@ -297,7 +293,7 @@ body {
 
 
 
-
+/* Content Sections */
 .content {
     padding: 50px;
     text-align: center;
@@ -308,7 +304,7 @@ body {
     border-radius: 10px;
 }
 
-
+/* Background Video */
 .background-video {
     width:1000px;
     height: 1000px;
