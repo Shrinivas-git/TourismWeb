@@ -15,5 +15,6 @@ def home1():
 def belagavi():
     return render_template('Belagavi.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/eticket')
+def eticket():
+    return render_template('ETicket.html')
