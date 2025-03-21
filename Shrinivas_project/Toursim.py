@@ -11,6 +11,9 @@ def home():
 def home1():
     return render_template('index.html')
 
+@app.route('/belagavi')
+def belagavi():
+    return render_template('Belagavi.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
