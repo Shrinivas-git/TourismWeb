@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+header {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: #800080;
+    padding: 10px 0;
+}
+button {
+    background: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15;
+    font-size: 15;
+}
+button:hover {
+    background: #b71c1c;
+}

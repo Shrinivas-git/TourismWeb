@@ -18,3 +18,5 @@ def belagavi():
 @app.route('/eticket')
 def eticket():
     return render_template('ETicket.html')
+if __name__ == '__main__':
+    app.run(debug=True)

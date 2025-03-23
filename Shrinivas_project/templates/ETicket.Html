@@ -1,9 +1,22 @@
-<html>
-<head><title>E-Ticket</title></head>
+<html >
+<head>
+    <title>E-Ticket Booking</title>
+  <script src="{{ url_for('static', filename='Etick.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Etic.css') }}">
+</head>
 <body>
-<h1>This is Eticket page</h1>
-<select  id="ETicket">
-    <option value="Bus">Bus</option>
-</select>
+<header>
+        <h1>E-Ticket Booking</h1>
+        <p>Hare krishna Rama</p>
+</header>
+<div id="tabs">
+    <button class="tabbutt">Buses</button>
+    <button class="tabbutt">Trains</button>
+    <button class="tabbutt" >Flights</button>
+    <button class="tabbutt" >Historical & Tourist Places</button>
+    <button class="tabbutt" >Museums</button>
+    <button class="tabbutt" >Sports</button>
+    <button class="tabbutt" >Events</button>
+</div>
 </body>
 </html>
