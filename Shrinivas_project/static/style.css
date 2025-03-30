@@ -13,8 +13,6 @@
     display: none;
 }
 
-=======
->>>>>>> 65cc1c2357b9a1d967da1c88f89973b6aa98c02a
 .navbar {
     display: flex;
     justify-content: center;
@@ -322,4 +320,22 @@
     border-radius: 10px;
     display: flex;
     margin-left: 130px;
+}
+.suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 200px;
+    display: none;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
 }

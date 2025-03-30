@@ -1,22 +1,129 @@
-<html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>E-Ticket Booking</title>
-  <script src="{{ url_for('static', filename='Etick.js') }}" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket Booking - Karnataka Tourism</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='Etic.css') }}">
+    <script src="{{ url_for('static', filename='Etick.js') }}" defer></script>
 </head>
 <body>
-<header>
+    <header>
         <h1>E-Ticket Booking</h1>
-        <p>Hare krishna Rama</p>
-</header>
-<div id="tabs">
-    <button class="tabbutt">Buses</button>
-    <button class="tabbutt">Trains</button>
-    <button class="tabbutt" >Flights</button>
-    <button class="tabbutt" >Historical & Tourist Places</button>
-    <button class="tabbutt" >Museums</button>
-    <button class="tabbutt" >Sports</button>
-    <button class="tabbutt" >Events</button>
-</div>
+        <p>Book tickets for buses, trains, flights, and explore Karnataka’s attractions.</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="nav-link active" onclick="openTab(event, 'buses')">Buses</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'trains')">Trains</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'flights')">Flights</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'historical')">Historical Places</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'museums')">Museums</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'tourist')">Tourist Places</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'sports')">Sports</a></li>
+            <li><a href="#" class="nav-link" onclick="openTab(event, 'events')">Events</a></li>
+        </ul>
+    </nav>
+
+    <div class="tab-content" id="buses">
+        <h2>Bus Ticket Booking</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <form id="bus-form">
+            <label for="bus-from">From:</label>
+            <input type="text" id="bus-from" placeholder="Enter departure city" onkeyup="showSuggestions(this, 'from-suggestions')">
+            <div class="suggestions" id="from-suggestions"></div>
+
+            <label for="bus-to">To:</label>
+            <input type="text" id="bus-to" placeholder="Enter destination" onkeyup="showSuggestions(this, 'to-suggestions')">
+            <div class="suggestions" id="to-suggestions"></div>
+
+            <label for="bus-date">Date:</label>
+            <input type="date" id="bus-date">
+
+            <button type="button" onclick="searchBuses()" class="bus-btn">
+Book ticket
+            </button>
+        </form>
+
+        <div id="bus-results"></div>
+    </div>
+
+    <div class="tab-content" id="trains">
+        <h2>Train Ticket Booking</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <form>
+            <label for="train-from">From:</label>
+            <input type="text" id="train-from" placeholder="Enter departure station">
+            <label for="train-to">To:</label>
+            <input type="text" id="train-to" placeholder="Enter destination">
+            <label for="train-date">Date:</label>
+            <input type="date" id="train-date">
+          <button type="button" onclick="searchTrains()">Search Trains</button>
+<div id="train-results"></div>
+
+        </form>
+    </div>
+
+    <div class="tab-content" id="flights">
+        <h2>Flight Ticket Booking</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <form>
+            <label for="flight-from">From:</label>
+            <input type="text" id="flight-from" placeholder="Enter departure airport">
+            <label for="flight-to">To:</label>
+            <input type="text" id="flight-to" placeholder="Enter destination">
+            <label for="flight-date">Date:</label>
+            <input type="date" id="flight-date">
+        <button type="button" onclick="searchFlights()">Search Flights</button>
+<div id="flight-results"></div>
+
+        </form>
+    </div>
+
+    <div class="tab-content" id="historical">
+        <h2>Historical Places</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <p>Book your entry tickets to visit historical places in Karnataka.</p>
+        <button type="button" onclick="bookHistorical()">Book Now</button>
+<div id="historical-results"></div>
+
+    </div>
+
+    <div class="tab-content" id="museums">
+        <h2>Museum Tickets</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <p>Explore Karnataka’s rich heritage by visiting its famous museums.</p>
+       <button type="button" onclick="bookMuseums()">Book Now</button>
+<div id="museum-results"></div>
+
+    </div>
+
+    <div class="tab-content" id="tourist">
+        <h2>Tourist Places</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <p>Discover top tourist attractions and book your tickets online.</p>
+       <button type="button" onclick="bookTouristPlaces()">Book Now</button>
+<div id="tourist-results"></div>
+
+    </div>
+
+    <div class="tab-content" id="sports">
+        <h2>Sports Events</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <p>Watch live sports matches and book tickets for your favorite events.</p>
+       <button type="button" onclick="bookSportsEvents()">Book Now</button>
+<div id="sports-results"></div>
+
+    </div>
+
+    <div class="tab-content" id="events">
+        <h2>Cultural & Music Events</h2>
+         <img src="{{ url_for('static', filename='KSRTC1.jpg') }}" alt="KSRTC Bus 1">
+        <p>Book tickets for concerts, cultural programs, and live events.</p>
+        <button type="button" onclick="bookEvents()">Book Now</button>
+<div id="events-results"></div>
+
+    </div>
 </body>
 </html>
