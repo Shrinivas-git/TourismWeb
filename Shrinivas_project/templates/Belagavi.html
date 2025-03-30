@@ -1,5 +1,95 @@
-<html>
-<head><title>Belagavi</title></head>
-<body><h2>belgavi is in karnataka</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belagavi - The Heritage City</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='belagavi.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Belagavi</h1>
+        <p>The Cultural & Historical Hub of Karnataka</p>
+    </header>
+
+    <section class="about">
+        <h2>Discover Belagavi</h2>
+<!--        <p>Belagavi, also known as Belgaum, is a historical and cultural gem in Karnataka. Known for its scenic beauty, rich heritage, and famous food, it offers a blend of tradition and modernity.</p>-->
+        <p>Belagavi – The Gateway to Karnataka
+Founded: 12th century (historically known as Venugrama)
+            <br>
+            <br>
+            <br>
+
+Overview:<br>
+Belagavi, also known as Belgaum, is a beautiful city in North Karnataka, nestled between the Western Ghats and the Deccan Plateau.
+            <br>
+            <br>
+            It is known for its pleasant climate, rich heritage, and a blend of Karnataka and Maharashtra cultures. The city serves as an important commercial hub and is home to the Suvarna Vidhana Soudha, where legislative sessions of Karnataka are held.
+</p>
+        <img src="{{ url_for('static', filename='RailwaySta.jpg') }}" >
+       <br><h3>Famous Attractions:</h3>
+<ul>
+    <li><strong>Gokak Falls</strong> – A stunning waterfall cascading from a height of 52 meters.</li>
+    <li><strong>Belagavi Fort</strong> – A historical fort dating back to the 12th century, built by the Ratta dynasty.</li>
+    <li><strong>Kittur Fort & Palace</strong> – The site of Rani Chennamma’s heroic battle against the British.</li>
+    <li><strong>Jamboti Hills & Vajrapoha Falls</strong> – A paradise for nature lovers and trekkers.</li>
+    <li><strong>Military Mahadeva Temple</strong> – An ancient temple maintained by the Indian Army.</li>
+    <li><strong>Kapileshwar Temple</strong> – Known as the 'Kashi of the South.'</li>
+    <li><strong>Rajhansgad Yellur Fort</strong> – A scenic hill fort offering panoramic views.</li>
+</ul>
+<br>
+        <img src="{{ url_for('static', filename='RailwaySta.jpg') }}" >
+ <p>
+Specialties:
+
+Belagavi Kunda – A famous sweet made from milk and sugar.
+<br>
+Wooden Toys & Handicrafts – Traditional crafts from the region.
+<br>
+Silk & Cotton Textiles – A major center for high-quality textile production.
+<br>
+Belagavi is a must-visit destination for history lovers, nature enthusiasts, and foodies, offering a perfect blend of heritage, adventure, and local flavors.
+         <p></p>
+    </section>
+
+    <section class="gallery">
+        <h2>Explore Belagavi</h2>
+        <div class="image-container">
+            <div class="image-card">
+                 <img src="{{ url_for('static', filename='RailwaySta.jpg') }}" >
+                <p>Belagavi Railway Station</p>
+            </div>
+            <br>
+            <div class="image-card">
+                 <img src="{{ url_for('static', filename='Busstand.jpg') }}" >
+                <p>Belagavi Bus Stand</p>
+            </div>
+            <br>
+            <div class="image-card">
+
+                 <img src="{{ url_for('static', filename='VaccineCenter.jpg') }}" >
+                <p>Belagavi Vaccine Center</p>
+            </div>
+            <br>
+            <div class="image-card">
+
+                 <img src="{{ url_for('static', filename='Hill.jpg') }}" >
+                <p>Belagavi Hill View</p>
+            </div>
+            <br>
+            <div class="image-card">
+
+                 <img src="{{ url_for('static', filename='Airport.jpg') }}">
+                <p>Belagavi Airport</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Explore more about Belagavi - A city that blends history and progress!</p>
+    </footer>
+
 </body>
 </html>
